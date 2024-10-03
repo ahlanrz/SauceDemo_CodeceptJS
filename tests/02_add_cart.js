@@ -2,7 +2,7 @@ Feature('add_to_cart');
 
 Scenario('TCC002-Add to Cart',  ({ I }) => {
 
-    I.amOnPage('/inventory.html');
+    I.amOnPage('inventory.html');
     // // I.loadCookie('sessionLogin');// Memuat cookie yang sudah disimpan
     // I.refreshPage(); // Segarkan halaman untuk menggunakan cookie
 

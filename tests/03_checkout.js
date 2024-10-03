@@ -2,7 +2,7 @@ Feature('checkout');
 
 Scenario('TCC003-checkout',  ({ I }) => {
 
-    I.amOnPage('/cart.html');
+    I.amOnPage('cart.html');
 
     I.click("//button[@id='checkout']");
     I.see("Checkout: Your Information");

@@ -8,7 +8,7 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',
+  tests: "./tests/*.js",
   output: './output',
   helpers: {
     Puppeteer: {
@@ -20,5 +20,7 @@ exports.config = {
   include: {
     I: './steps_file.js'
   },
+  bootstrap:null,
+  mocha: {},
   name: 'SauceDemo_CodeceptJS'
 }
