@@ -13,5 +13,7 @@ Scenario('TCC002-Add to Cart',  ({ I }) => {
     I.click('#add-to-cart-sauce-labs-bike-light'); //pilih item kedua
     I.click('//*[@id="shopping_cart_container"]/a'); //click icon keranjang
     I.see('Your Cart');
-}
+
+    
+    }
 );
