@@ -8,11 +8,11 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './tests/*_test.js',
+  tests: './*_test.js',
   output: './output',
   helpers: {
     Puppeteer: {
-      url: '',
+      url: 'https://www.saucedemo.com/',
       show: true,
       windowSize: '1200x900'
     }

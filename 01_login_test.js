@@ -15,16 +15,15 @@ const loginData = [
 Scenario('Test login dengan berbagai kredensial', ({ I }) => {
   // Looping untuk mencoba beberapa kombinasi login
   loginData.forEach((data) => {
-    I.amOnPage('https://www.saucedemo.com/');
-    I.wait(1);
+    I.amOnPage('');
+    // I.wait(1);
     I.fillField('user-name', data.username);
-    I.wait(1);
+    // I.wait(1);
     I.fillField('password', data.password);
-    I.wait(1);
+    // I.wait(1);
     I.click('#login-button');
-    I.wait(1);
+    // I.wait(1);
 
-    // I.wait(5);
 
     if (data.isValid) {
       // Jika login valid
